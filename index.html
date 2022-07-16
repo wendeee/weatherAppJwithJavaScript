@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h3><i class="fa-solid fa-arrow-left" id="arrow"></i> Weather App</h3>
+        </header>
+        <hr id="header-divider">
+        <section class="input-div">
+            <p class="error-msg">Please enter a valid city name</p>
+            <div class="input-field"><input class="city_Name" type="text" placeholder="Enter City Name" onfocus="this.value=''"><i class="fa-solid fa-magnifying-glass" id="search" role="button"></i></div>
+            <div class="divider">
+                <hr>
+                <p>or</p>
+                <hr>
+            </div>
+            <button>Use Device location</button>
+        </section>
+
+        <!-- weather details -->
+
+        <section class="weather-details">
+            <img class="icon" src="images/weather.png" alt="weather-icon">
+            <p class="temp">
+                <span class="temp-value">13</span>
+                <span>°C</span>
+            </p>
+            <p class="description">Cloudy</p>
+            <p class=""><i class="fa-solid fa-location-dot" ></i> <span class="cityName">Lagos</span></p>
+            <hr class="weather-divider">
+            <div class="humidity">
+                
+                <div>
+                    <p>Humidity</p>
+                    <p class="humidity-value">84%</p>
+                    
+                </div>
+
+                <div class="speed">
+                    <p>wind</p>
+                    <p class="wind">80km/h</p>
+                </div>
+
+            </div>
+        </section>
+       
+    </div>
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
